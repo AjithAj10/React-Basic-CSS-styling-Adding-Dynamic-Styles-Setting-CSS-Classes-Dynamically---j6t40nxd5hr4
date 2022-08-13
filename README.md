@@ -1,10 +1,25 @@
-You have a golf ball that you want to move with keyboard keys.You are given a Start Button that begins the game. To move the ball, appropriately update state variable <code>ballPosition</code>. Ball should be positioned absolute.
+# Golf Game
 
-<i>Acceptance Criteria
-<ul>
-<li>Ball should have className as <code>ball</code></li>
-<li>When Start button is clicked, the button should not be rendered and a ball should be rendered.</li>
-<li>When Right Arrow  key is clicked on the keyboard, move the ball to the right by 5 pixel</li>
-<li>EventListener  should handle keydown event with options {key:ArrowRight, keyCode:39}.</li>
-</ul>
-</i>
+### You are creating a golf game. The game starts with the click of the start button. You want to take the ball to the hole and you are timed with a timer. The ball moves with arrow keys on the keyboard.
+
+## Acceptance Criteria
+- Render a start button. The timer starts on clicking the start button. Timer counts in seconds.
+- Render a ball and a hole(destiny).
+- Before clicking the start button, the ball should not move with arrow keys.
+- After clicking the start button, ball should move by using up, down, left and right arrow keys. (each key should shift the ball by 5px in respective direction).
+- When the ball goes into the hole, timer should stop.
+- Make sure you give the components the right class names as mentioned in the details below and that you use the right state variable names
+- Carefully complete timer start and stop actions
+
+
+## Details:
+- The goal is to move the ball to the hole. To move the ball update top and left parameters in css with absolute positioning.
+- Track the seconds using state variable time.
+- Track the coordinate of the ball using state variable x and y
+- Coordinates of the ball at starting should be 0, 0
+- Coordinates of the hole should be (250px, 250px)
+- class name of the ball - > ball
+- class name of the hole -> hole
+- class name of the display timer should be -> heading- timer
+- class name of the start button -> start
+
